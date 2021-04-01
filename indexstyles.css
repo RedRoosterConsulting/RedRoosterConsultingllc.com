@@ -1,14 +1,10 @@
-
-#banner-background {
-	background: url("images/stock-apples-cover.png");
+/* 
+#index-hero {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/stock-apples-cover.png");
 	background-size: cover;
-	z-index: -2;
-	top: 0px; left: 0;
-	width: auto; height: 100vh;
-	margin: 0; padding: 0;
-	display: grid;
-	place-items: center;
-}
+	background-attachment: fixed;
+	text-shadow: 0 0 1rem rgba(0,0,0,0.5);
+} */
 #title-header {
 	margin-top: 1rem;
 	font-size: clamp(3rem, 8vw, 16rem);
@@ -17,17 +13,35 @@
 }
 #title-tagline {
 	font-family: var(--monofont);
-	font-size: clamp(2rem, 3vw, 4rem);
-	text-shadow: 0 0 1rem rgba(0,0,0,0.5);
+	font-size: clamp(2rem, 5vw, 4rem);
 	margin-top: 0;
+	line-height: 1;
 }
 
+#index-sticky {
+	height: calc(100vh - 2rem);
+	border-radius: 1rem;
+}
+@media only screen and (max-width: 900px) {
+	#index-sticky {
+		height: auto;
+	}
+}
 
 #services-label {
-	margin: 1rem 0;
-	margin-left: -.2rem;
+	margin: 1rem 1rem;
+	margin-left: .8rem;
+	padding-top: 1.5rem;
 	font-family: var(--monofont);
 	font-size: 1.5rem;
+}
+#services-section {
+	--fg: #fff;
+	color: #fff;
+	background: var(--altbg);
+	width: calc( 100% + 2rem);
+	margin: -1rem;
+	border-radius: 2rem 2rem 0 0 ;
 }
 
 /* The big boxes with service links */
@@ -37,7 +51,9 @@
 	grid-template-areas: "leftarea rightarea";
 	place-items: center start;
 	gap: 2rem;
+	margin: 0 1rem;
 	padding: 1rem;
+
 	border-style: solid;
 	border-color: var(--acolor);
 }

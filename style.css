@@ -41,8 +41,9 @@
 
 body {
 	--bg: #fff;
-	--bg: #202030;
+	--altbg: #202030;
 	--fg: #fff;
+	--fg: #000;
 	--acolor: #d66a1f;
 
 	--logofont: "Formula Condensed";
@@ -95,7 +96,7 @@ nw {
 /* HEADER */
 #header {
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: auto 1fr;
 	place-items: center;
 	width: auto;
 	margin: 0;
@@ -104,9 +105,9 @@ nw {
 	position: relative;
 	background-color: var(--bg);
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
 	#header {
-		grid-template-columns: min-content 1fr;
+		grid-template-columns: 1fr;
 		padding-bottom: 1rem;
 	}
 	#header nav {
@@ -116,33 +117,21 @@ nw {
 	}
 }
 #logo-container {
-	max-width: 200px;
+	max-width: 600px;
 	min-width: 10vh;
+	padding-left: 1rem;
 }
 #logo-container a {
 	display: block;
 	height: fit-content;
 	border-bottom: var(--th) var(--acolor);
 }
-#header h1 {
-	justify-self: start;
-	font-family: var(--logofont);
-	letter-spacing: .02em;
-	font-weight: bold;
-	font-size: clamp(2rem, 6.5vw, 5rem);
-	margin-left: 1rem;
-	margin-top: 1.5rem;
-}
-#header h1 a {
-	color: var(--fg);
-	text-decoration: none;
-}
 /* ^ clearing a styles for header */
 #header nav {
 	justify-self: end;
 	padding: 1rem;
 	font-family: var(--monofont);
-	font-size: clamp(1.5rem, 3vw, 1.5rem);
+	font-size: clamp(1.5rem, 2vw, 1.75rem);
 	text-transform: uppercase;
 	letter-spacing: .06em;
 	text-align: right;
@@ -267,7 +256,7 @@ ul li::marker {
 .contact-content {
 	display: grid;
 	place-items: center;
-	min-height: calc(100vh - 250px);
+	min-height: calc(100vh - 450px);
 }
 
 #contact-title {
@@ -303,6 +292,9 @@ ul li::marker {
 	font-family: var(--monofont);
 	width: fit-content;
 	margin: auto;
+}
+#footertext img {
+	display: block;
 }
 #footertext p {
 	line-height: 1.2;
