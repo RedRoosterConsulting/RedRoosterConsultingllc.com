@@ -114,6 +114,7 @@
 	}
 	.hero-first {
 		position: static;
+		height: min-content;
 	}
 	.index-grid {
 		display: block;

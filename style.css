@@ -187,6 +187,7 @@ nw {
 }
 .sticky-image {
 	max-height: calc(100vh - 2rem);
+	object-fit: cover;
 }
 .hero-second{
 	width: auto;
