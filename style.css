@@ -181,16 +181,25 @@ nw {
 .hero-first {
 	position: sticky;
 	top: 0rem;
-	height: fit-content;
+	height: calc(100vh);
+	display: grid;
+	place-items: center;
 }
 .sticky-image {
 	max-height: calc(100vh - 2rem);
-	object-fit: cover;
 }
 .hero-second{
+	width: auto;
+}
+.hero-second :is(p, ul, ol) {
 	max-width: 25rem;
+	margin-inline: auto;
 }
 .hero-second img {
+	margin: 1rem auto;
+}
+.hero-second h1 {
+	width: fit-content;
 	margin: 1rem auto;
 }
 .hero-second h2 {
