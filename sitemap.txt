@@ -1,7 +1,8 @@
 http://redroosterconsultingllc.com/
-http://redroosterconsultingllc.com/about.html
-http://redroosterconsultingllc.com/contact.html
-http://redroosterconsultingllc.com/services/planting-design-and-bill-of-materials.html
-http://redroosterconsultingllc.com/services/irrigation-mapping.html
-http://redroosterconsultingllc.com/services/gps-location-and-staking.html
-http://redroosterconsultingllc.com/services/project-management.html
+http://redroosterconsultingllc.com/about/
+http://redroosterconsultingllc.com/contact/
+http://redroosterconsultingllc.com/services/planting-design-and-bill-of-materials/
+http://redroosterconsultingllc.com/services/irrigation-mapping/
+http://redroosterconsultingllc.com/services/gps-location-and-staking/
+http://redroosterconsultingllc.com/services/project-management/
+http://redroosterconsultingllc.com/services/find-buried-pipe/
